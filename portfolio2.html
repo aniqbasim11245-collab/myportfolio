@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Software Developer specialising in Mobile and Full-Stack Development." />
+  <meta name="theme-color" content="#07080c" />
+  <meta name="color-scheme" content="dark" />
+  <title>Portfolio | Mobile Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/styles2.css" />
+</head>
+<body>
+  <canvas id="particles"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">&lt;DEV /&gt;</a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#contact" class="nav-cta">Let's Talk </a>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+</button>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span><span>Available for new projects</span></div>
+      <h1 class="hero-title">Hi, I'm a <span class="grad">Developer</span></h1>
+      <p class="hero-description">
+        Specializing in mobile application programming and software engineering. 
+        I build intuitive mobile experiences using Flutter and Firebase, 
+        focusing on practical solutions for real-world needs.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View My Work</a>
+        <a href="#" class="btn btn-secondary"><i class="fas fa-file-arrow-down"></i> Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// about</div>
+        <h2 class="section-title">About <span class="grad">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="avatar">
+            <div class="avatar-inner">
+              <i class="fas fa-user-code"></i>
+            </div>
+          </div>
+          <div class="about-name">Software Developer</div>
+          <div class="about-meta">
+            <div><i class="fas fa-graduation-cap"></i><span>Computer Science Student</span></div>
+            <div><i class="fas fa-laptop-code"></i><span>Mobile & Web Development</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Building the next generation of mobile apps.</h3>
+          <p>
+            I am a developer focused on creating functional and user-friendly mobile applications. 
+            My recent work includes developing **MyCat**, a pet care tracking application designed 
+            to help owners manage feline health through breed identification and automated reminders.
+          </p>
+          <div class="focus-pills">
+            <span class="focus-pill"><i class="fas fa-mobile-alt"></i><span>Mobile Development</span></span>
+            <span class="focus-pill"><i class="fas fa-database"></i><span>Firebase Integration</span></span>
+            <span class="focus-pill"><i class="fas fa-sync"></i><span>Distributed Systems</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// skills</div>
+        <h2 class="section-title">Technical <span class="grad">Toolkit</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-head">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-title">Languages</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-head">
+            <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+            <div class="skill-title">Frameworks & Tools</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// projects</div>
+        <h2 class="section-title">Featured <span class="grad">Work</span></h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image"><i class="fas fa-cat"></i></div>
+          <div class="project-body">
+            <h3 class="project-title">MyCat — Pet Care Tracker</h3>
+            <p class="project-desc">
+              A comprehensive mobile app for feline health management, featuring background 
+              notification services for appointments and breed identification capabilities.
+            </p>
+            <div class="project-tech">
+              <span class="chip">Flutter</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Workmanager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">// contact</div>
+        <h2 class="section-title">Get In <span class="grad">Touch</span></h2>
+      </div>
+      <div class="hero-social">
+        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+  <script>
+  const themeToggle = document.getElementById('theme-toggle');
+const htmlElement = document.documentElement;
+const icon = themeToggle.querySelector('i');
+
+// Check for saved user preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  htmlElement.classList.add('light-mode');
+  icon.classList.replace('fa-moon', 'fa-sun');
+}
+
+themeToggle.addEventListener('click', () => {
+  htmlElement.classList.toggle('light-mode');
+  
+  const isLight = htmlElement.classList.contains('light-mode');
+  
+  // Update Icon
+  if (isLight) {
+    icon.classList.replace('fa-moon', 'fa-sun');
+    localStorage.setItem('theme', 'light');
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon');
+    localStorage.setItem('theme', 'dark');
+  }
+});
+</script>
+</body>
+</html>

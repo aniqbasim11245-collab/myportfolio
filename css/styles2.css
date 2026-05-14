@@ -1,0 +1,125 @@
+/* Design tokens from original stylesheet */
+:root {
+  --bg: #07080c;
+  --bg-2: #0d0f16;
+  --surface: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e7e9ee;
+  --muted: #9aa3b2;
+  --accent: #7c5cff;
+  --accent-2: #22d3ee;
+  --grad: linear-gradient(135deg, #7c5cff 0%, #22d3ee 50%, #ec4899 100%);
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --radius: 16px;
+  --radius-lg: 22px;
+}
+
+/* Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: ''; position: fixed; inset: 0;
+  background: radial-gradient(800px 500px at 10% -10%, rgba(124, 92, 255, .18), transparent 60%);
+  z-index: -2; pointer-events: none;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Navigation */
+.navbar {
+  position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+  width: calc(100% - 32px); max-width: 1160px; z-index: 100;
+  background: rgba(13, 15, 22, .55);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 18px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+.nav-logo { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--accent-2); }
+.nav-menu { display: flex; gap: 6px; list-style: none; }
+.nav-menu a { font-size: 13.5px; color: var(--muted); padding: 8px 14px; transition: 0.3s; }
+.nav-menu a:hover { color: var(--text); }
+.nav-cta { background: var(--grad); color: #fff; padding: 9px 16px; border-radius: 999px; font-weight: 600; font-size: 13px; }
+
+/* Hero */
+.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 100px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 999px;
+  font-size: 12px; color: var(--muted); margin-bottom: 24px;
+}
+.hero-badge .dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; }
+.hero-title { font-size: clamp(40px, 7vw, 76px); font-weight: 700; margin-bottom: 16px; }
+.hero-title .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero-description { font-size: 18px; color: var(--muted); max-width: 600px; margin: 0 auto 32px; }
+
+/* Sections & Cards */
+section { padding: 100px 0; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-tag { font-family: 'JetBrains Mono', monospace; color: var(--accent-2); font-size: 13px; margin-bottom: 10px; }
+.section-title { font-size: 40px; }
+
+.about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; align-items: center; }
+.about-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; text-align: center; }
+.avatar { width: 120px; height: 120px; margin: 0 auto 20px; background: var(--grad); border-radius: 50%; padding: 3px; }
+.avatar-inner { width: 100%; height: 100%; background: var(--bg-2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+
+/* Skills & Projects */
+.skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.skill-card, .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; transition: 0.3s; }
+.skill-card:hover, .project-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.skill-tags, .project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.skill-tag, .chip { background: rgba(124, 92, 255, 0.1); border: 1px solid rgba(124, 92, 255, 0.2); padding: 4px 10px; border-radius: 6px; font-size: 12px; color: #c4b5fd; }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 12px; font-weight: 600; transition: 0.3s; }
+.btn-primary { background: var(--grad); color: #fff; }
+.btn-secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+
+.hero-social { display: flex; justify-content: center; gap: 15px; margin-top: 30px; }
+.social-link { width: 45px; height: 45px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+.social-link:hover { background: var(--grad); color: #fff; }
+
+/* Light Mode Variables */
+:root.light-mode {
+  --bg: #f8fafc;
+  --bg-2: #ffffff;
+  --surface: rgba(0, 0, 0, 0.04);
+  --surface-2: rgba(0, 0, 0, 0.06);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+  --text: #0f172a;
+  --muted: #475569;
+  --dim: #64748b;
+  /* Keep the accents/gradients for brand consistency */
+}
+
+/* Theme Toggle Button Styling */
+.theme-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.theme-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
