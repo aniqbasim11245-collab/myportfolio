@@ -171,3 +171,12 @@ html.light-mode .nav-cta {
 html.light-mode .nav-menu a:hover {
   color: #fff;
 }
+html.light-mode .theme-btn {
+  color: #fff !important;
+  border-color: rgba(255,255,255,0.2);
+}
+
+html.light-mode .theme-btn:hover {
+  color: #fff !important;
+  border-color: #fff;
+}
