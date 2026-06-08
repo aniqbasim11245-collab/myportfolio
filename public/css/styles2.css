@@ -157,3 +157,17 @@ section { padding: 100px 0; }
 :root.light-mode .nav-cta {
   color: #fff;
 }
+
+html.light-mode .navbar {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+html.light-mode .nav-menu a,
+html.light-mode .nav-logo,
+html.light-mode .nav-cta {
+  color: #fff;
+}
+
+html.light-mode .nav-menu a:hover {
+  color: #fff;
+}
