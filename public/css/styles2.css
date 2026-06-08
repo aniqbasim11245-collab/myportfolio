@@ -123,3 +123,19 @@ section { padding: 100px 0; }
   border-color: var(--accent);
   color: var(--accent);
 }
+/* Styles to make your image fit the circular avatar */
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This prevents the image from stretching */
+  border-radius: 50%; /* Keeps the image circular */
+  display: block;
+}
+
+/* Optional: Adjust avatar-inner if it has padding */
+.avatar-inner {
+  overflow: hidden; /* Ensures the image doesn't leak out of the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
