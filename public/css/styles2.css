@@ -55,6 +55,10 @@ body::before {
   gap: 30px;
 }
 
+.navbar a {
+  text-decoration: none;
+}
+
 .nav-logo { font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--accent-2); }
 .nav-menu { display: flex; gap: 6px; list-style: none; }
 .nav-menu a { font-size: 13.5px; color: var(--muted); padding: 8px 14px; transition: 0.3s; }
