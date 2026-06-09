@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <link rel="stylesheet" href="css/styles2.css?v=10" />
+  <link rel="stylesheet" href="css/styles2.css?v=11" />
 </head>
 <body>
   <canvas id="particles"></canvas>
@@ -48,7 +48,7 @@
       </div>
     </div>
   </section>
-  <section id="about">
+  <section id="about" class="reveal">
     <div class="container">
       <div class="section-header">
         <div class="section-tag">// about</div>
@@ -87,7 +87,7 @@
       </div>
     </div>
   </section>
-  <section id="skills">
+  <section id="skills" class="reveal">
     <div class="container">
       <div class="section-header">
         <div class="section-tag">// skills</div>
@@ -126,7 +126,7 @@
       </div>
     </div>
   </section>
-  <section id="projects">
+  <section id="projects" class="reveal">
     <div class="container">
       <div class="section-header">
         <div class="section-tag">// projects</div>
@@ -171,7 +171,7 @@
       </div>
     </div>
   </section>
-   <section id="blog">
+   <section id="blog" class="reveal">
   <div class="container">
     <div class="section-header">
       <div class="section-tag">// blog</div>
@@ -184,7 +184,7 @@
         <p>Sharing my experience building mobile apps with Flutter.</p>
       </div>
 
-      <div class="project-card">
+      <div class="project-card" class="reveal">
         <h3>Why I Built MyCat</h3>
         <p>Explaining the inspiration behind my pet care application.</p>
       </div>
@@ -192,7 +192,7 @@
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
   <div class="container">
     <div class="section-header">
       <div class="section-tag">// contact</div>
@@ -265,6 +265,22 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
+const revealElements = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+  revealElements.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (elementTop < windowHeight - revealPoint) {
+      element.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
 </script>
 </body>
 </html>
