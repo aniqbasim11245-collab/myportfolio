@@ -39,13 +39,21 @@ This project was developed as part of the CSD34203 Special Topics in Software De
 ```text
 portfolio/
 │
-├── index.html
-├── README.md
-├── css/
-│   └── styles2.css
-└── images/
-    ├── basim.jpg
-    └── frontpage.png
+├── public/
+│   ├── index.html
+│   ├── 404.html
+│   ├── css/
+│   │   └── styles2.css
+│   └── images/
+│       ├── basim.jpg
+│       └── frontpage.png
+│
+├── .firebase/
+├── .vscode/
+├── firebase.json
+├── .firebaserc
+├── .gitignore
+└── README.md
 ```
 
 ---
@@ -64,17 +72,19 @@ portfolio/
 
 A comprehensive mobile application for feline health management featuring appointment reminders and breed identification capabilities.
 
-**Technologies Used:**
+#### Technologies Used
 
 * Flutter
 * Firebase
 * Workmanager
 
+---
+
 ### I-RHS System
 
 A web-based in-and-out college management system for students at Politeknik Sultan Mizan Zainal Abidin.
 
-**Technologies Used:**
+#### Technologies Used
 
 * PHP
 * HTML
@@ -86,21 +96,27 @@ A web-based in-and-out college management system for students at Politeknik Sult
 
 ## How to Run the Project
 
-1. Download or clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/your-repository-name.git
 ```
 
-2. Open the project folder
+### 2. Open the project folder
 
-3. Run the website by opening `index.html` in your browser
+```bash
+cd your-repository-name
+```
+
+### 3. Run the project
+
+Open `index.html` in your browser.
 
 ---
 
 ## Live Demo
 
-https://myportfolio-7d6d4.web.app/
+https://yourproject.web.app
 
 ---
 
@@ -122,6 +138,16 @@ https://myportfolio-7d6d4.web.app/
 
 ---
 
+## Future Improvements
+
+* Add project filtering system
+* Improve mobile navigation menu
+* Add animations and transition effects
+* Integrate downloadable resume feature
+* Add backend contact form support
+
+---
+
 ## Author
 
 ### Aniq Basim Bin Ramza
@@ -134,3 +160,9 @@ Interested in:
 * Web Development
 * Software Engineering
 * UI/UX Design
+
+---
+
+## License
+
+This project is developed for educational purposes under the CSD34203 Special Topics in Software Development course.
