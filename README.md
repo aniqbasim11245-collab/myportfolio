@@ -94,26 +94,6 @@ A web-based in-and-out college management system for students at Politeknik Sult
 
 ---
 
-## How to Run the Project
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/your-repository-name.git
-```
-
-### 2. Open the project folder
-
-```bash
-cd your-repository-name
-```
-
-### 3. Run the project
-
-Open `index.html` in your browser.
-
----
-
 ## Live Demo
 
 https://yourproject.web.app
