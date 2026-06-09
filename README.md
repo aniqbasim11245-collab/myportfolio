@@ -15,6 +15,7 @@ This project was developed as part of the CSD34203 Special Topics in Software De
 * About Me section
 * Skills and technologies section
 * Project showcase section
+* Blog section with sample posts
 * Contact section with social links
 * Smooth and clean user interface
 * Firebase deployment support
@@ -39,25 +40,47 @@ This project was developed as part of the CSD34203 Special Topics in Software De
 portfolio/
 │
 ├── index.html
+├── README.md
 ├── css/
 │   └── styles2.css
-├── images/
-│   └── basim.jpg
-└── README.md
+└── images/
+    ├── basim.jpg
+    └── frontpage.png
 ```
 
 ---
 
 ## Screenshots
 
-(Add screenshots of your website here)
+### Home Page
 
-Example:
+![Home Page](images/frontpage.png)
 
-* Home Page
-* About Section
-* Projects Section
-* Light/Dark Mode
+---
+
+## Featured Projects
+
+### MyCat – Pet Care Tracker
+
+A comprehensive mobile application for feline health management featuring appointment reminders and breed identification capabilities.
+
+**Technologies Used:**
+
+* Flutter
+* Firebase
+* Workmanager
+
+### I-RHS System
+
+A web-based in-and-out college management system for students at Politeknik Sultan Mizan Zainal Abidin.
+
+**Technologies Used:**
+
+* PHP
+* HTML
+* CSS
+* JavaScript
+* CodeIgniter 4
 
 ---
 
@@ -77,10 +100,7 @@ git clone https://github.com/yourusername/your-repository-name.git
 
 ## Live Demo
 
-(Add your Firebase Hosting link here)
-
-Example:
-https://yourproject.web.app
+https://myportfolio-7d6d4.web.app/
 
 ---
 
@@ -104,7 +124,13 @@ https://yourproject.web.app
 
 ## Author
 
-Aniq Basim Bin Ramza
+### Aniq Basim Bin Ramza
 
 Final Year Undergraduate Student in Software Engineering
-Interested in Mobile Development, Web Development, and Software Engineering.
+
+Interested in:
+
+* Mobile Development
+* Web Development
+* Software Engineering
+* UI/UX Design
