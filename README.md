@@ -54,7 +54,7 @@ portfolio/
 
 ### Home Page
 
-![Home Page](images/frontpage.png)
+![Home Page](public/images/frontpage.png)
 
 ---
 
