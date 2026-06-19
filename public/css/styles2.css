@@ -423,3 +423,22 @@ html.light-mode .about-card {
   opacity: 1;
   transform: translateY(0);
 }
+
+.project-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:20px;
+    padding:10px 18px;
+    border-radius:10px;
+    background:var(--grad);
+    color:white;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.project-btn:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+}
